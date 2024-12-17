@@ -1,0 +1,68 @@
+.body {
+    font-family: Arial, sans-serif;
+}
+
+.bus-scheme {
+    position: absolute;
+    width: 600px;
+    height: 400px; /* Изменено для представления автобуса */
+    border: 2px solid #333; /* Контур автобуса */
+    margin: 0 auto; /* Центрирование схемы */
+    background-color: #f0f0f0; /* Цвет фона автобуса */
+}
+
+.driver-area {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.driver-seat {
+    width: 60px;
+    height: 50px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #000;
+    cursor: move; /* Курсор перемещения */
+    position: absolute; /* Позволяет свободно перемещать элемент */
+}
+
+.steering-wheel {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: lightgray;
+    top: 0;
+    left: 15px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.seat-container {
+    position: absolute;
+    top: 100px; /* Отступ от верхнего края */
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру */
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center; /* Центрирование рядов */
+
+    margin: 5px 0; /* Отступы между рядами */
+}
+
+.grid {
+    border: 1px solid black; /* Границы клеток */
+    width: 40px; /* ширина ячейки */
+    height: 30px; /* высота ячейки */
+    margin: 0 5px; /* отступ между ячейками */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
